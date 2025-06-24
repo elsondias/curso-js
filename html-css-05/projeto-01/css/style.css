@@ -1,0 +1,164 @@
+/* Layout geral */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* NAVBAR */
+#navbar {
+  color: #da0303a6;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 2px solid #ddd;
+  background-color: #2d8007;
+}
+
+#navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* MAIN */
+.container {
+  display: flex;
+  padding: 2rem 2.5rem;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts-container {
+  flex: 3 1 0;
+}
+
+.post {
+  margin-bottom: 2.5rem;
+}
+
+.post img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+img {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+.title,
+.description {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+/* SIDEBAR */
+#sidebar {
+  flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#search-bar form {
+  display: flex;
+}
+
+#search-bar input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search-bar input[type="submit"] {
+  cursor: pointer;
+  background-color: #2e2c2c67;
+  color: #000;
+  border-radius: 5px;
+}
+
+#search-bar input[type="submit"]:hover {
+  transition: 0.8s;
+  background-color: #000;
+  color: #fff;
+}
+
+#categories li {
+  margin-bottom: 1rem;
+}
+
+#tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#tags-container a {
+  background-color: #ddd;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+}
+
+/* FOOTER */
+#footer {
+  border-top: 2px solid #ddd;
+  padding: 3rem;
+  text-align: center;
+}
+
+#footer h2,
+#footer p {
+  margin-bottom: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 450px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}

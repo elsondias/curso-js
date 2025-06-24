@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #e4dfdf;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.photo-bio {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.photo-bio img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-slide {
+    margin-top: 10px;
+}
+
+.btn-slide button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.btn-slide button:hover {
+    background-color: #0cdb13;
+    color: #000;
+}
+
+.hobbies {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies ul {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.hobbies li {
+  background-color: #bdbdbd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.fav-food {
+  margin-top: 30px;
+}
+
+.fav-food a {
+  text-decoration: none;
+  background-color: #bdbdbd;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.fav-food a:hover {
+  color: #4caf50;
+}
+
+@media (max-width: 600px) {
+  .photo-bio img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,207 @@
+body {
+  padding-bottom: 500px;
+}
+
+/* 1 - FLEX
+   Ativa o Flexbox no container principal */
+.flex {
+  display: flex;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* 2 - FLEX COLUMN
+   Muda o eixo principal para vertical (coluna) */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* 3 - WRAP
+   Permite que os itens quebrem linha ao ultrapassar o limite do container */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 40px;
+  width: 33%;
+  border: 1px solid red;
+}
+
+/* 4 - JUSTIFY CONTENT
+   Alinha os itens no eixo principal (horizontal por padrão) */
+.center,
+.space-around,
+.space-between,
+.end {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box {
+  width: 50px;
+}
+
+.center {
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.space-around {
+  justify-content: space-around; /* Espaço ao redor dos itens */
+}
+
+.space-between {
+  justify-content: space-between; /* Espaço entre os itens */
+}
+
+.end {
+  justify-content: end; /* Alinha ao final do eixo principal */
+}
+
+/* ALIGN ITEMS
+   Alinha no eixo transversal (vertical por padrão) */
+.center,
+.align-center,
+.flex-end,
+.stretch {
+  display: flex;
+  margin-bottom: 20px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box {
+  width: 50px;
+}
+
+.align-center {
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.flex-end {
+  align-items: flex-end; /* Alinha os itens ao fundo do container */
+}
+
+.stretch {
+  align-items: stretch; /* Estica os itens para ocupar toda a altura */
+}
+
+.stretch .box {
+  height: auto;
+}
+
+/* GAP
+   Define espaçamento entre os itens flex */
+.gap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid green;
+  gap: 10px; /* Espaço entre os elementos filhos */
+}
+
+.gap .box {
+  width: 32%;
+}
+
+/* ORDER
+   Controla a ordem de exibição dos itens */
+.order {
+  display: flex;
+}
+
+#one {
+  order: 1; /* Aparece após os demais */
+}
+
+#two {
+  order: 2;
+}
+
+#three {
+  order: 3;
+}
+
+/* GROW
+   Define o quanto um item pode crescer em relação aos outros */
+.grow {
+  display: flex;
+}
+
+.grow .box {
+  flex: 1; /* Cresce igualmente */
+}
+
+.grow .big {
+  flex: 2; /* Cresce duas vezes mais que os outros */
+}
+
+/* BASIS
+   Define o tamanho inicial de um item antes da distribuição do espaço */
+.basis {
+  display: flex;
+}
+
+.basis .box {
+  flex-basis: 20px; /* Tamanho inicial */
+}
+
+.basis .big {
+  flex-grow: 1; /* Pode crescer se houver espaço */
+}
+
+/* SHRINK
+   Define o quanto um item pode encolher se necessário */
+.shrink {
+  display: flex;
+}
+
+.shrink .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  width: auto;
+}
+
+.shrink .small {
+  flex-shrink: 2; /* Pode encolher mais que os outros */
+}
+
+/* SHORTAND
+   Atalho para grow, shrink e basis: flex: grow shrink basis */
+.shorthand {
+  display: flex;
+}
+
+.shorthand .box {
+  width: auto;
+  flex: 1 1 50px; /* Cresce, encolhe e começa com 50px */
+}
+
+.shorthand .different {
+  flex: 3 1 400px; /* Cresce mais e começa com 400px */
+}
+
+/* ALIGN-SELF
+   Permite alinhar um item individualmente no eixo transversal */
+.auto-alignment {
+  height: 300px;
+  display: flex;
+  align-items: flex-end; /* Itens vão para o fundo */
+  border: 1px solid purple;
+}
+
+.auto-alignment .different {
+  align-self: center; /* Esse item específico vai pro centro */
+}
