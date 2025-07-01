@@ -1,4 +1,4 @@
-/* Geral */
+/* GERAL */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-/* Navbar */
+/* NAVBAR */
 header nav {
   background-color: #333;
 }
@@ -71,7 +71,7 @@ header nav {
   color: #fff;
 }
 
-/* Conteúdo */
+/* CONTEÚDO */
 #ribbon {
   text-align: center;
   padding: 1rem;
@@ -190,7 +190,7 @@ header nav {
   outline: 2px solid #43a1ff;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 480px) {
   #navbar li {
     display: none;
